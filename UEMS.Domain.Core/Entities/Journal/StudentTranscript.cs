@@ -16,7 +16,10 @@ namespace UEMS.Domain.Core.Entities
         public char ScoreLatter { get; set; }
         public uint TotalAbsentPercentage { get; set; }
 
+        public Guid ScheduleGuid { get; set; }
         public virtual Schedule Schedule { get; set; }
+
+        public Guid StudentGuid { get; set; }
         public virtual Student Student { get; set; }
 
         public override void InitializeAssociatedProperties() { }

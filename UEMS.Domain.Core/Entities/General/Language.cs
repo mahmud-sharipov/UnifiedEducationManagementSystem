@@ -11,14 +11,13 @@ namespace UEMS.Domain.Core.Entities
         public Language() : base() { }
 
         public string Name { get; set; }
-
         public string Key { get; set; }
 
         public virtual ISet<Group> Groups { get; set; }
 
         public override void InitializeAssociatedProperties()
         {
-
+            Groups = new HashSet<Group>();
         }
     }
 }

@@ -10,9 +10,11 @@ namespace UEMS.Domain.Core.Entities
     {
         public StudentExam() : base() { }
 
+        public Guid ExamGuid { get; set; }
         public virtual Exam Exam { get; set; }
-        public virtual Student Student { get; set; }
 
+        public Guid StudentGuid { get; set; }
+        public virtual Student Student { get; set; }
 
         public override void InitializeAssociatedProperties() { }
     }

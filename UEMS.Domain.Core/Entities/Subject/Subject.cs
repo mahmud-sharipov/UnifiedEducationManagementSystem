@@ -11,12 +11,15 @@ namespace UEMS.Domain.Core.Entities
         public Subject() : base() { }
 
         public string Name { get; set; }
-
         public string Code { get; set; }
+
+        public virtual ISet<Schedule> Schedules { get; set; }
+        public virtual ISet<TeacherSubject> Teachers { get; set; }
 
         public override void InitializeAssociatedProperties()
         {
-
+            Schedules = new HashSet<Schedule>();
+            Teachers = new HashSet<TeacherSubject>();
         }
     }
 }

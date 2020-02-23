@@ -16,7 +16,12 @@ namespace UEMS.Domain.Core.Entities
         public bool HasFinalExam { get; set; }
 
         public virtual ISet<ScheduleTemplateDetail> Details { get; set; }
+        public virtual ISet<Schedule> Schedules { get; set; }
 
-        public override void InitializeAssociatedProperties() { }
+        public override void InitializeAssociatedProperties()
+        {
+            Details = new HashSet<ScheduleTemplateDetail>();
+            Schedules = new HashSet<Schedule>();
+        }
     }
 }

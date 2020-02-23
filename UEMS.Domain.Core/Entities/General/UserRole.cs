@@ -10,8 +10,10 @@ namespace UEMS.Domain.Core.Entities
     {
         public UserRole() : base() { }
 
+        public Guid UserGuid { get; set; }
         public virtual User User { get; set; }
 
+        public Guid RoleGuid { get; set; }
         public virtual Role Role { get; set; }
 
         public override void InitializeAssociatedProperties() { }

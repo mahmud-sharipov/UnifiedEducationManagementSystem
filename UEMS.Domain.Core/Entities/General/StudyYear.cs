@@ -11,11 +11,16 @@ namespace UEMS.Domain.Core.Entities
         public StudyYear() : base() { }
 
         public string Name { get; set; }
-
         public DateTime StartDate { get; set; }
-
         public DateTime EndtDate { get; set; }
 
-        public override void InitializeAssociatedProperties() { }
+        public virtual ISet<GlobalSettings> GlobalSettings { get; set; }
+        public virtual ISet<Schedule> Schedules { get; set; }
+        public override void InitializeAssociatedProperties()
+        {
+            GlobalSettings = new HashSet<GlobalSettings>();
+            Schedules = new HashSet<Schedule>();
+
+        }
     }
 }

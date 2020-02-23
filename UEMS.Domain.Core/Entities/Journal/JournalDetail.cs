@@ -12,10 +12,15 @@ namespace UEMS.Domain.Core.Entities
 
         public DateTime Date { get; set; }
         public uint Score { get; set; }
-        public uint AbsentHours { get; set; }
+        public string Absents { get; set; }
 
+        public Guid JournalGuid { get; set; }
         public virtual Journal Journal { get; set; }
+
+        public Guid StudentGroupGuid { get; set; }
         public virtual StudentGroup StudentGroup { get; set; }
+
+        public Guid TemplateDetailGuid { get; set; }
         public virtual ScheduleTemplateDetail TemplateDetail { get; set; }
 
         public override void InitializeAssociatedProperties() { }

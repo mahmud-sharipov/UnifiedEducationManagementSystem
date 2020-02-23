@@ -11,14 +11,20 @@ namespace UEMS.Domain.Core.Entities
         public Student() : base() { }
 
         public StudentStatus Status { get; set; }
-    }
 
-    public enum SubjectKnowledgeLevel
-    {
-        Beginner,
-        Elementary,
-        Intermediate,
-        Advanced,
-        Expert
+        public virtual ISet<StudentExamPermission> ExamPermissions { get; set; }
+        public virtual ISet<StudentExam> Exams { get; set; }
+        public virtual ISet<StudentGroup> Groups { get; set; }
+        public virtual ISet<StudentTranscript> Transcripts { get; set; }
+        public virtual ISet<StudentElectiveSchedule> ElectiveSchedules { get; set; }
+        public override void InitializeAssociatedProperties()
+        {
+            base.InitializeAssociatedProperties();
+            ExamPermissions = new HashSet<StudentExamPermission>();
+            Exams = new HashSet<StudentExam>();
+            Groups = new HashSet<StudentGroup>();
+            Transcripts = new HashSet<StudentTranscript>();
+            ElectiveSchedules = new HashSet<StudentElectiveSchedule>();
+        }
     }
 }

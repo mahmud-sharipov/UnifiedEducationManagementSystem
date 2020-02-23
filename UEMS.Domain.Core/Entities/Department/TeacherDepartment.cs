@@ -10,15 +10,14 @@ namespace UEMS.Domain.Core.Entities
     {
         public TeacherDepartment() : base() { }
 
-        public virtual Teacher Teacher { get; set; }
-
-        public virtual Department Department { get; set; }
-
         public TeacherDepartmentStatus Status { get; set; }
 
-        public override void InitializeAssociatedProperties()
-        {
+        public Guid TeacherGuid { get; set; }
+        public virtual Teacher Teacher { get; set; }
 
-        }
+        public Guid DepartmentGuid { get; set; }
+        public virtual Department Department { get; set; }
+
+        public override void InitializeAssociatedProperties() { }
     }
 }

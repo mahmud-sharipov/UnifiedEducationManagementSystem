@@ -9,5 +9,7 @@ namespace UEMS.Domain.Core.Entities
     public class DailyExamType : ExamType
     {
         public DailyExamType() : base() { }
+
+        public override void InitializeAssociatedProperties() { }
     }
 }

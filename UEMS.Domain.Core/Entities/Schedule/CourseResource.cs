@@ -10,6 +10,7 @@ namespace UEMS.Domain.Core.Entities
     {
         public CourseResource() : base() { }
 
+        public Guid ScheduleGuid { get; set; }
         public virtual Schedule Schedule { get; set; }
     }
 

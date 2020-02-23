@@ -10,10 +10,14 @@ namespace UEMS.Domain.Core.Entities
     {
         public Journal() : base() { }
 
+        public Guid ScheduleGuid { get; set; }
         public virtual Schedule Schedule { get; set; }
 
         public virtual ISet<JournalDetail> Details { get; set; }
 
-        public override void InitializeAssociatedProperties() { }
+        public override void InitializeAssociatedProperties()
+        {
+            Details = new HashSet<JournalDetail>();
+        }
     }
 }

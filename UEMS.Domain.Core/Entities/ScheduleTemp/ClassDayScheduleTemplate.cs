@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UEMS.Domain.Core.Entities
 {
-    public class ClassDayScheduleTemplate
+    public class ClassDayScheduleTemplate : ScheduleTemplateDetail
     {
         public ClassDayScheduleTemplate() : base() { }
 

@@ -15,6 +15,7 @@ namespace UEMS.Domain.Core.Entities
         public string RecourcePath { get; set; }
         public ResourceType Type { get; set; }
 
+        public Guid UploadUserGuid { get; set; }
         public virtual User UploadUser { get; set; }
 
         public override void InitializeAssociatedProperties() { }

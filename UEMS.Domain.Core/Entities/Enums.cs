@@ -61,4 +61,13 @@ namespace UEMS.Domain.Core.Entities
         TestCenter,
         Teacher
     }
+
+    public enum SubjectKnowledgeLevel
+    {
+        Beginner,
+        Elementary,
+        Intermediate,
+        Advanced,
+        Expert
+    }
 }

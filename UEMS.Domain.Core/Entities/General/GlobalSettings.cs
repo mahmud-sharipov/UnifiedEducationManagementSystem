@@ -10,6 +10,9 @@ namespace UEMS.Domain.Core.Entities
     {
         public GlobalSettings() : base() { }
 
+        public bool IsSystemFullySetup { get; set; }
+
+        public Guid CurrentStudyYearGuid { get; set; }
         public virtual StudyYear CurrentStudyYear { get; set; }
 
         public override void InitializeAssociatedProperties() { }

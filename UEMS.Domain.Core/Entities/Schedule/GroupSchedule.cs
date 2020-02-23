@@ -10,8 +10,11 @@ namespace UEMS.Domain.Core.Entities
     {
         public GroupSchedule() : base() { }
 
+        public Guid GroupGuid { get; set; }
         public virtual Group Group { get; set; }
-        public virtual Schedule Details { get; set; }
+
+        public Guid ScheduleGuid { get; set; }
+        public virtual Schedule Schedule { get; set; }
 
         public override void InitializeAssociatedProperties() { }
     }

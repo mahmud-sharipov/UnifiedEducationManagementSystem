@@ -10,8 +10,14 @@ namespace UEMS.Domain.Core.Entities
     {
         public Worker() : base() { }
 
+        public virtual Teacher Teacher { get; set; }
+
         public virtual ISet<WorkerPosition> Positions { get; set; }
 
-        public virtual Position Position { get; set; }
+        public override void InitializeAssociatedProperties()
+        {
+            base.InitializeAssociatedProperties();
+            Positions = new HashSet<WorkerPosition>();
+        }
     }
 }

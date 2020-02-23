@@ -11,15 +11,16 @@ namespace UEMS.Domain.Core.Entities
         public Profession() : base() { }
 
         public string Name { get; set; }
-
         public string Code { get; set; }
 
+        public Guid DepartmentGuid { get; set; }
         public virtual Department Department { get; set; }
 
         public virtual ISet<Group> Groups { get; set; }
 
         public override void InitializeAssociatedProperties()
         {
+            Groups = new HashSet<Group>();
         }
     }
 }

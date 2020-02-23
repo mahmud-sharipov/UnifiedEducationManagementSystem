@@ -11,13 +11,9 @@ namespace UEMS.Domain.Core.Entities
         public User() : base() { }
 
         public string Username { get; set; }
-
         public int Email { get; set; }
-
         public int Password { get; set; }
-
         public string Avatar { get; set; }
-
         public bool IsActive { get; set; }
 
         public virtual ISet<UserRole> UserRoles { get; set; }
@@ -26,6 +22,7 @@ namespace UEMS.Domain.Core.Entities
         public override void InitializeAssociatedProperties()
         {
             UserRoles = new HashSet<UserRole>();
+            UploadFiles = new HashSet<Resource>();
         }
     }
 }

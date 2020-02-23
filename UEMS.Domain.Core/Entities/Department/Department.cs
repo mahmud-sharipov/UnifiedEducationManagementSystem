@@ -12,16 +12,21 @@ namespace UEMS.Domain.Core.Entities
 
         public string Name { get; set; }
 
+        public Guid FacultyGuid { get; set; }
         public Faculty Faculty { get; set; }
 
-        public virtual Worker Head { get; set; }
+        public Guid HeadGuid { get; set; }
+        public virtual Teacher Head { get; set; }
 
-        public virtual Worker DeputyHead { get; set; }
+        public Guid DeputyHeadGuid { get; set; }
+        public virtual Teacher DeputyHead { get; set; }
 
         public virtual ISet<Profession> Professions { get; set; }
-
+        public virtual ISet<TeacherDepartment> Teachers { get; set; }
         public override void InitializeAssociatedProperties()
         {
+            Professions = new HashSet<Profession>();
+            Teachers = new HashSet<TeacherDepartment>();
         }
     }
 

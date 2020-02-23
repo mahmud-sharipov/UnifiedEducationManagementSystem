@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UEMS.Domain.Core.Entities
 {
-    public class ExamType : EntityBase
+    public abstract class ExamType : EntityBase
     {
         public ExamType() : base() { }
 
@@ -14,6 +14,11 @@ namespace UEMS.Domain.Core.Entities
         public string Description { get; set; }
         public decimal Multiplier { get; set; }
 
-        public override void InitializeAssociatedProperties() { }
+        public virtual ISet<ScheduleTemplate> ScheduleTemplates { get; set; }
+
+        public override void InitializeAssociatedProperties()
+        {
+            ScheduleTemplates = new HashSet<ScheduleTemplate>();
+        }
     }
 }

@@ -10,12 +10,19 @@ namespace UEMS.Domain.Core.Entities
     {
         public StudentGroup() : base() { }
 
-        public virtual Student Student { get; set; }
-
-        public virtual Group Group { get; set; }
-
         public StudentGroupStatus Status { get; set; }
 
-        public override void InitializeAssociatedProperties() { }
+        public Guid StudentGuid { get; set; }
+        public virtual Student Student { get; set; }
+
+        public Guid GroupGuid { get; set; }
+        public virtual Group Group { get; set; }
+
+        public virtual ISet<JournalDetail> JournalDetails { get; set; }
+
+        public override void InitializeAssociatedProperties()
+        {
+            JournalDetails = new HashSet<JournalDetail>();
+        }
     }
 }

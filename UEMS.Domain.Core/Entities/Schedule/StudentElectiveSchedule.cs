@@ -10,12 +10,12 @@ namespace UEMS.Domain.Core.Entities
     {
         public StudentElectiveSchedule() : base() { }
 
+        public Guid StudentGuid { get; set; }
         public virtual Student Student { get; set; }
 
+        public Guid ElectiveScheduleGuid { get; set; }
         public virtual ElectiveSchedule ElectiveSchedule { get; set; }
 
-        public override void InitializeAssociatedProperties()
-        {
-        }
+        public override void InitializeAssociatedProperties() { }
     }
 }

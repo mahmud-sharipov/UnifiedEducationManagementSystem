@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace UEMS.Domain.Core.Entities
 {
-    public class ExamScheduleTemplate
+    public class ExamScheduleTemplate : ScheduleTemplateDetail
     {
-        
+
+        public ExamScheduleTemplate() : base() { }
+
+        public ExaminerType ExaminerType { get; set; }
     }
 }

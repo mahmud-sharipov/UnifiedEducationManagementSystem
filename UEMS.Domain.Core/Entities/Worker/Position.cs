@@ -16,7 +16,7 @@ namespace UEMS.Domain.Core.Entities
 
         public override void InitializeAssociatedProperties()
         {
-
+            Workers = new HashSet<WorkerPosition>();
         }
     }
 }

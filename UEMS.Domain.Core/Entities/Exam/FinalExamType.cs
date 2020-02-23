@@ -10,6 +10,13 @@ namespace UEMS.Domain.Core.Entities
     {
         public FinalExamType() : base() { }
 
-        public ExaminerType Examiner { get; set; }
+        public ExaminerType ExaminerType { get; set; }
+
+        public virtual ISet<Exam> Exams { get; set; }
+
+        public override void InitializeAssociatedProperties()
+        {
+            Exams = new HashSet<Exam>();
+        }
     }
 }

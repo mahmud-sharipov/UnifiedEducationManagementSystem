@@ -11,18 +11,15 @@ namespace UEMS.Domain.Core.Entities
         public WorkerPosition() : base() { }
 
         public string Department { get; set; }
-
         public DateTime StartDate { get; set; }
-
         public DateTime EndDate { get; set; }
 
+        public Guid WorkerGuid { get; set; }
         public Worker Worker { get; set; }
 
+        public Guid PositionGuid { get; set; }
         public Position Position { get; set; }
 
-        public override void InitializeAssociatedProperties()
-        {
-
-        }
+        public override void InitializeAssociatedProperties() { }
     }
 }

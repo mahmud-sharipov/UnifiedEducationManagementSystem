@@ -9,7 +9,5 @@ namespace UEMS.Domain.Core.Entities
     public class CompulsorySchedule : Schedule
     {
         public CompulsorySchedule() : base() { }
-
-        public virtual Journal CourseWork { get; set; }
     }
 }

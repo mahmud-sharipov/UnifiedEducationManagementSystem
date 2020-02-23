@@ -12,9 +12,16 @@ namespace UEMS.Domain.Core.Entities
 
         public uint Order { get; set; }
 
+        public Guid ExamTypeGuid { get; set; }
         public virtual ExamType ExamType { get; set; }
-        public virtual ScheduleTemplate ScheduleTemplate { get; set; }
+        public Guid TemplateGuid { get; set; }
+        public virtual ScheduleTemplate Template { get; set; }
 
-        public override void InitializeAssociatedProperties() { }
+        public virtual ISet<JournalDetail> JournalDetails { get; set; }
+
+        public override void InitializeAssociatedProperties()
+        {
+            JournalDetails = new HashSet<JournalDetail>();
+        }
     }
 }
