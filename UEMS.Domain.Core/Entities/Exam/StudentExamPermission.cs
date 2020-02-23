@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace UEMS.Domain.Core.Entities
 {
-    public class StudentExam : EntityBase
+    public class StudentExamPermission : EntityBase
     {
-        public StudentExam() : base() { }
+        public StudentExamPermission() : base() { }
 
-        public virtual Exam Exam { get; set; }
         public virtual Student Student { get; set; }
-
+        public virtual Exam Exam { get; set; }
 
         public override void InitializeAssociatedProperties() { }
+
     }
 }

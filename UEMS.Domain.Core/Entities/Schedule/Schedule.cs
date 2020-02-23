@@ -26,7 +26,7 @@ namespace UEMS.Domain.Core.Entities
         public virtual StudyYear StudyYear { get; set; }
         public virtual Subject Subject { get; set; }
         public virtual Teacher Teacher { get; set; }
-        public virtual CourseTemplate Template { get; set; }
+        public virtual ScheduleTemplate Template { get; set; }
         public virtual Journal Journal { get; set; }
         public virtual ISet<GroupSchedule> Groups { get; set; }
         public virtual ISet<CourseResource> Resources { get; set; }

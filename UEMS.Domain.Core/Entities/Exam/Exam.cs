@@ -10,7 +10,11 @@ namespace UEMS.Domain.Core.Entities
     {
         public Exam() : base() { }
 
-        public virtual Schedule Schedule  { get; set; }
+        public virtual Schedule Schedule { get; set; }
+
+        public virtual FinalExamType Type { get; set; }
+
+        public virtual ISet<StudentExam> StudentExams { get; set; }
 
         public override void InitializeAssociatedProperties() { }
     }

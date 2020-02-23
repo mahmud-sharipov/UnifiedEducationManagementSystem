@@ -16,7 +16,7 @@ namespace UEMS.Domain.Core.Entities
 
         public virtual Journal Journal { get; set; }
         public virtual StudentGroup StudentGroup { get; set; }
-        public virtual CourseTemplateDetail TemplateDetail { get; set; }
+        public virtual ScheduleTemplateDetail TemplateDetail { get; set; }
 
         public override void InitializeAssociatedProperties() { }
     }
