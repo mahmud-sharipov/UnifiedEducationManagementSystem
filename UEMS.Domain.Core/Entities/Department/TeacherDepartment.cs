@@ -21,10 +21,4 @@ namespace UEMS.Domain.Core.Entities
 
         }
     }
-
-    public enum TeacherDepartmentStatus
-    {
-        Previous = 0,
-        Current = 1
-    }
 }

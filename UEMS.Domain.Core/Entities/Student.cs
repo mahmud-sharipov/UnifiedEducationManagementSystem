@@ -13,11 +13,12 @@ namespace UEMS.Domain.Core.Entities
         public StudentStatus Status { get; set; }
     }
 
-    public enum StudentStatus
+    public enum SubjectKnowledgeLevel
     {
-        Active,
-        Alumnus,
-        AcademicLeave,
-        Expelled
+        Beginner,
+        Elementary,
+        Intermediate,
+        Advanced,
+        Expert
     }
 }

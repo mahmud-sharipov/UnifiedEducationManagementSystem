@@ -6,15 +6,12 @@ using System.Threading.Tasks;
 
 namespace UEMS.Domain.Core.Entities
 {
-    public class StudentGroup : EntityBase
+    public class GroupSchedule : EntityBase
     {
-        public StudentGroup() : base() { }
-
-        public virtual Student Student { get; set; }
+        public GroupSchedule() : base() { }
 
         public virtual Group Group { get; set; }
-
-        public StudentGroupStatus Status { get; set; }
+        public virtual Schedule Details { get; set; }
 
         public override void InitializeAssociatedProperties() { }
     }

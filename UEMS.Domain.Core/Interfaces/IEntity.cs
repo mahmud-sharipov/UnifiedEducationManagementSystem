@@ -9,11 +9,9 @@ namespace UEMS.Domain.Core.Interfaces
     public interface IEntity
     {
         Guid Guid { get; }
-        
-        string Title { get; }
-     
-        DateTime CreatedDate { get; set; }
 
-        DateTime UpdatedDate { get; set; }
+        DateTime CreatedDate { get; }
+
+        DateTime UpdatedDate { get; }
     }
 }

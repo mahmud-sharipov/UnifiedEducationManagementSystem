@@ -21,13 +21,4 @@ namespace UEMS.Domain.Core.Entities
         }
 
     }
-
-    public enum SubjectKnowledgeLevel
-    {
-        Beginner,
-        Elementary,
-        Intermediate,
-        Advanced,
-        Expert
-    }
 }

@@ -24,10 +24,4 @@ namespace UEMS.Domain.Core.Entities
 
         public virtual Nationality Nationality { get; set; }
     }
-
-    public enum Gender
-    {
-        Male,
-        Fimail
-    }
 }

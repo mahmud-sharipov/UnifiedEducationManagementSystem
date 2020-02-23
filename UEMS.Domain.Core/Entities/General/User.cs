@@ -21,6 +21,7 @@ namespace UEMS.Domain.Core.Entities
         public bool IsActive { get; set; }
 
         public virtual ISet<UserRole> UserRoles { get; set; }
+        public virtual ISet<Resource> UploadFiles { get; set; }
 
         public override void InitializeAssociatedProperties()
         {

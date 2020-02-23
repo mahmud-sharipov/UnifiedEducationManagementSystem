@@ -25,8 +25,6 @@ namespace UEMS.Domain.Core.Entities
 
         public DateTime UpdatedDate { get; set; }
 
-        public virtual string Title { get; }
-
         public abstract void InitializeAssociatedProperties();
     }
 }
