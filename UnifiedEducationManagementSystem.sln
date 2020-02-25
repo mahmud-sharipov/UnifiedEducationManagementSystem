@@ -9,21 +9,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{CB6F7B95-B78
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{90C2C9A1-6F4F-40DE-B737-01A5BEF9C871}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UEMS.API", "UEMS.API\UEMS.API.csproj", "{EA221653-DEFF-4B9E-AB1E-6D5B9FB9C3BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UEMS.API", "UEMS.API\UEMS.API.csproj", "{EA221653-DEFF-4B9E-AB1E-6D5B9FB9C3BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UEMS.Domain.Core", "UEMS.Domain.Core\UEMS.Domain.Core.csproj", "{AAAD4A68-49CE-4506-8A2A-023E65781695}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UEMS.Domain.Core", "UEMS.Domain.Core\UEMS.Domain.Core.csproj", "{AAAD4A68-49CE-4506-8A2A-023E65781695}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UEMS.Domain.Abstraction", "UEMS.Domain.Abstraction\UEMS.Domain.Abstraction.csproj", "{01922808-4D8D-4BC8-9970-F4DB8F4CC8E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UEMS.Domain.Infrastructure", "UEMS.Domain.Interfaces\UEMS.Domain.Interfaces.csproj", "{01922808-4D8D-4BC8-9970-F4DB8F4CC8E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UEMS.Application.Abstraction", "UEMS.Application.Abstraction\UEMS.Application.Abstraction.csproj", "{6FC7EDD9-671D-4AA4-8E29-33634041B05C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UEMS.Infrastructure.Interfaces", "UEMS.Infrastructure.Interfaces\UEMS.Infrastructure.Interfaces.csproj", "{6FC7EDD9-671D-4AA4-8E29-33634041B05C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UEMS.Application.Data", "UEMS.Application.Data\UEMS.Application.Data.csproj", "{ABCBBCA0-B97A-4E29-8CAB-C1A3C85B4203}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UEMS.Infrastructure.Data", "UEMS.Infrastructure.Data\UEMS.Infrastructure.Data.csproj", "{ABCBBCA0-B97A-4E29-8CAB-C1A3C85B4203}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UEMS.Application.Business", "UEMS.Application.Business\UEMS.Application.Business.csproj", "{9A0566D3-6592-4F67-A998-54A01D11C429}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UEMS.Infrastructure.Business", "UEMS.Infrastructure.Business\UEMS.Infrastructure.Business.csproj", "{9A0566D3-6592-4F67-A998-54A01D11C429}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IoC", "IoC", "{8943FBFC-FAA6-4FF1-BA87-8C9F7D1ECC6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UEMS.IoC", "UEMS.IoC\UEMS.IoC.csproj", "{61BC6EF2-F8C9-4520-B231-F9E07E9C396A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UEMS.IoC", "UEMS.IoC\UEMS.IoC.csproj", "{61BC6EF2-F8C9-4520-B231-F9E07E9C396A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
